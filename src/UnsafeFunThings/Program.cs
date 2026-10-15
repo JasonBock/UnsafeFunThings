@@ -1,11 +1,14 @@
 ﻿using BenchmarkDotNet.Running;
+using System.Runtime.CompilerServices;
+using UnsafeFunThings.FunctionPointers;
 using UnsafeFunThings.RefReturns;
 using UnsafeFunThings.UnsafeReflection;
 using UnsafeFunThings.UsingUnsafeAs;
 
 //BenchmarkRunner.Run<ListIndexPerformance>();
+//BenchmarkRunner.Run<UpdatingFields>();
+BenchmarkRunner.Run<Calculations>();
 //BenchmarkRunner.Run<CastingObjects>();
-BenchmarkRunner.Run<UpdatingFields>();
 
 /*
 object target = new TargetType();
@@ -32,5 +35,5 @@ try
 catch (InvalidCastException e)
 {
 	Console.WriteLine($"Unsafe.As() exception: {e.Message}");
-} 
+}
 */
