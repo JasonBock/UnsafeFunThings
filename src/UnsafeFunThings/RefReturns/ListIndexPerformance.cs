@@ -44,7 +44,7 @@ public class ListIndexPerformance
 	{
 		var totalSize = 0;
 
-		foreach (ref var giant in CollectionsMarshal.AsSpan(this.listData))
+		foreach (var giant in CollectionsMarshal.AsSpan(this.listData))
 		{
 			totalSize += giant.Value4.Length;
 		}

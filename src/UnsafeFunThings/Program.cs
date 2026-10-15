@@ -1,9 +1,11 @@
 ﻿using BenchmarkDotNet.Running;
 using UnsafeFunThings.RefReturns;
+using UnsafeFunThings.UnsafeReflection;
 using UnsafeFunThings.UsingUnsafeAs;
 
-BenchmarkRunner.Run<ListIndexPerformance>();
+//BenchmarkRunner.Run<ListIndexPerformance>();
 //BenchmarkRunner.Run<CastingObjects>();
+BenchmarkRunner.Run<UpdatingFields>();
 
 /*
 object target = new TargetType();
