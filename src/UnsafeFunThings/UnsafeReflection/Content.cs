@@ -8,5 +8,7 @@ public sealed class Content
 	private int id;
 	private Guid index;
 
+	public int Generate() => this.id ^ this.index.GetHashCode();
+
 	private int Compute() => this.id ^ this.index.GetHashCode();
 }

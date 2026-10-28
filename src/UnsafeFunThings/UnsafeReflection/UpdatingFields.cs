@@ -36,6 +36,7 @@ public class UpdatingFields
 		var content = new Content();
 		ContentUnsafeAccessors.GetIdField(content) = this.id;
 		ContentUnsafeAccessors.GetIndexField(content) = this.index;
+
 		return ContentUnsafeAccessors.ComputeMethod(content);
 	}
 }

@@ -7,7 +7,8 @@ using UnsafeFunThings.UsingUnsafeAs;
 
 //BenchmarkRunner.Run<ListIndexPerformance>();
 //BenchmarkRunner.Run<UpdatingFields>();
-BenchmarkRunner.Run<Calculations>();
+BenchmarkRunner.Run<InvokingPublicMethod>();
+//BenchmarkRunner.Run<Calculations>();
 //BenchmarkRunner.Run<CastingObjects>();
 
 /*

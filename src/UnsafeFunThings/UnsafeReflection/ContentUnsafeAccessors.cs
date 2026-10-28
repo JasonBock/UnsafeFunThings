@@ -6,6 +6,9 @@ namespace UnsafeFunThings.UnsafeReflection;
 // you can remove the "ref" keyword.
 public static class ContentUnsafeAccessors
 {
+	[UnsafeAccessor(UnsafeAccessorKind.Method, Name = "Generate")]
+	public static extern int GenerateMethod(Content content);
+
 	[UnsafeAccessor(UnsafeAccessorKind.Method, Name = "Compute")]
 	public static extern int ComputeMethod(Content content);
 
