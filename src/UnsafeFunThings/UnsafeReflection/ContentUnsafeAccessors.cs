@@ -2,8 +2,6 @@
 
 namespace UnsafeFunThings.UnsafeReflection;
 
-// If you don't need to modify the field value,
-// you can remove the "ref" keyword.
 public static class ContentUnsafeAccessors
 {
 	[UnsafeAccessor(UnsafeAccessorKind.Method, Name = "Generate")]
