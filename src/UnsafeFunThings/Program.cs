@@ -6,10 +6,10 @@ using UnsafeFunThings.UnsafeReflection;
 using UnsafeFunThings.UsingUnsafeAs;
 
 //BenchmarkRunner.Run<ListIndexPerformance>();
-//BenchmarkRunner.Run<UpdatingFields>();
-BenchmarkRunner.Run<InvokingPublicMethod>();
 //BenchmarkRunner.Run<Calculations>();
 //BenchmarkRunner.Run<CastingObjects>();
+BenchmarkRunner.Run<UpdatingFields>();
+//BenchmarkRunner.Run<InvokingPublicMethod>();
 
 /*
 object target = new TargetType();
