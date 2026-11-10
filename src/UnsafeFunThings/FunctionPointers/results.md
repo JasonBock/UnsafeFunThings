@@ -1,4 +1,4 @@
-| Method                | Mean      | Error     | StdDev    | Ratio | RatioSD |
-|---------------------- |----------:|----------:|----------:|------:|--------:|
-| DelegateMethod        | 1.0267 ns | 0.0141 ns | 0.0118 ns |  1.00 |    0.02 |
-| FunctionPointerMethod | 0.8489 ns | 0.0151 ns | 0.0141 ns |  0.83 |    0.02 |
+| Method                | Mean     | Error     | StdDev    | Ratio |
+|---------------------- |---------:|----------:|----------:|------:|
+| DelegateMethod        | 2.488 ns | 0.0140 ns | 0.0131 ns |  1.00 |
+| FunctionPointerMethod | 1.884 ns | 0.0062 ns | 0.0058 ns |  0.76 |

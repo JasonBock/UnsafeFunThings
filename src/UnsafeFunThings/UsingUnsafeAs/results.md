@@ -1,11 +1,7 @@
-﻿# .NET 10
-
-| Method            | Mean      | Error     | StdDev    | Code Size | Allocated |
+﻿| Method            | Mean      | Error     | StdDev    | Code Size | Allocated |
 |------------------ |----------:|----------:|----------:|----------:|----------:|
-| CastUsingCSharp   | 0.5096 ns | 0.0316 ns | 0.0296 ns |      62 B |         - |
-| CastUsingUnsafeAs | 0.3673 ns | 0.0103 ns | 0.0096 ns |       5 B |         - |
-
-## .NET 10.0.12 (10.0.12, 10.0.1226.42308), X64 RyuJIT x86-64-v3 (Job: DefaultJob)
+| CastUsingCSharp   | 0.8693 ns | 0.0045 ns | 0.0042 ns |      62 B |         - |
+| CastUsingUnsafeAs | 0.7412 ns | 0.0021 ns | 0.0020 ns |       5 B |         - |
 
 ```assembly
 ; UnsafeFunThings.UsingUnsafeAs.CastingObjects.CastUsingCSharp()
@@ -13,33 +9,31 @@
        mov       rdx,[rcx+8]
        mov       rax,rdx
        test      rax,rax
-       je        short M00_L00
+       je        short 000000000000133F
        mov       rcx,offset MT_UnsafeFunThings.UsingUnsafeAs.TargetType
        cmp       [rax],rcx
-       jne       short M00_L01
+       jne       short 0000000000001344
 M00_L00:
        add       rsp,28
        ret
 M00_L01:
-       call      System.Runtime.CompilerServices.CastHelpers.ChkCastClass(Void*, System.Object)
+       call      000000000000B110
        int       3
 ; Total bytes of code 42
 ```
 ```assembly
 ; System.Runtime.CompilerServices.CastHelpers.ChkCastClass(Void*, System.Object)
        test      rdx,rdx
-       je        short M01_L00
+       je        short 000000000000B11A
        cmp       [rdx],rcx
-       jne       short M01_L01
+       jne       short 000000000000B11E
 M01_L00:
        mov       rax,rdx
        ret
 M01_L01:
-       jmp       qword ptr [7FFBDECAFD08]; System.Runtime.CompilerServices.CastHelpers.ChkCastClassSpecial(Void*, System.Object)
+       jmp       qword ptr [0FE40]; System.Runtime.CompilerServices.CastHelpers.ChkCastClassSpecial(Void*, System.Object)
 ; Total bytes of code 20
 ```
-
-## .NET 10.0.12 (10.0.12, 10.0.1226.42308), X64 RyuJIT x86-64-v3 (Job: DefaultJob)
 
 ```assembly
 ; UnsafeFunThings.UsingUnsafeAs.CastingObjects.CastUsingUnsafeAs()

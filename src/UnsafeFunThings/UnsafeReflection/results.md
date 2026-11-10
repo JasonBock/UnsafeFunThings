@@ -1,13 +1,13 @@
-| Method                                 | Mean       | Error     | StdDev    | Ratio | Gen0   | Allocated | Alloc Ratio |
-|--------------------------------------- |-----------:|----------:|----------:|------:|-------:|----------:|------------:|
-| SetFieldsAndComputeViaReflection       | 51.6385 ns | 0.4180 ns | 0.3705 ns | 1.000 | 0.0069 |     120 B |        1.00 |
-| SetFieldsAndComputeViaCachedReflection | 33.5862 ns | 0.2402 ns | 0.2129 ns | 0.650 | 0.0069 |     120 B |        1.00 |
-| SetFieldsAndComputeViaUnsafeAccessors  |  0.1065 ns | 0.0042 ns | 0.0039 ns | 0.002 |      - |         - |        0.00 |
-| SetFieldsAndComputeViaSaferAccessors   |  0.1022 ns | 0.0025 ns | 0.0021 ns | 0.002 |      - |         - |        0.00 |
+| Method                                 | Mean      | Error     | StdDev    | Ratio | Gen0   | Allocated | Alloc Ratio |
+|--------------------------------------- |----------:|----------:|----------:|------:|-------:|----------:|------------:|
+| SetFieldsAndComputeViaReflection       | 47.360 ns | 0.5649 ns | 0.5284 ns |  1.00 | 0.0069 |     120 B |        1.00 |
+| SetFieldsAndComputeViaCachedReflection | 30.976 ns | 0.1387 ns | 0.1297 ns |  0.65 | 0.0069 |     120 B |        1.00 |
+| SetFieldsAndComputeViaUnsafeAccessors  |  1.264 ns | 0.0023 ns | 0.0021 ns |  0.03 |      - |         - |        0.00 |
+| SetFieldsAndComputeViaSaferAccessors   |  1.083 ns | 0.0022 ns | 0.0021 ns |  0.02 |      - |         - |        0.00 |
 
 
 | Method                    | Mean       | Error     | StdDev    | Ratio  | RatioSD | Gen0   | Allocated | Alloc Ratio |
 |-------------------------- |-----------:|----------:|----------:|-------:|--------:|-------:|----------:|------------:|
-| InvokeDirectly            |  0.1054 ns | 0.0107 ns | 0.0100 ns |   1.01 |    0.13 |      - |         - |          NA |
-| InvokeUsingReflection     | 14.6355 ns | 0.0674 ns | 0.0598 ns | 139.93 |   12.44 | 0.0014 |      24 B |          NA |
-| InvokeUsingUnsafeAccessor |  0.1034 ns | 0.0032 ns | 0.0029 ns |   0.99 |    0.09 |      - |         - |          NA |
+| InvokeDirectly            |  0.8663 ns | 0.0053 ns | 0.0049 ns |   1.00 |    0.00 |      - |         - |          NA |
+| InvokeUsingReflection     | 12.5018 ns | 0.0605 ns | 0.0566 ns |  14.43 |    0.10 | 0.0014 |      24 B |          NA |
+| InvokeUsingUnsafeAccessor |  0.8565 ns | 0.0016 ns | 0.0014 ns |   0.99 |    0.01 |      - |         - |          NA |

@@ -1,8 +1,6 @@
 <Project>
   <ItemGroup>
-  </ItemGroup>
-  <ItemGroup>
-    <PackageVersion Include="BenchmarkDotNet" Version="0.15.8" />
+    <PackageVersion Include="BenchmarkDotNet" Version="0.16.0-preview.2" />
     <PackageVersion Include="SaferAccessors" Version="0.1.0" />
   </ItemGroup>
 </Project>
